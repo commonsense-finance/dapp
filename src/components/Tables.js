@@ -106,26 +106,27 @@ export const PageTrafficTable = () => {
   };
 
   return (
-    <Card border="light" className="shadow-sm mb-4">
-      <Card.Body className="pb-0">
-        <Table responsive className="table-centered table-nowrap rounded mb-0">
-          <thead className="thead-light">
-            <tr>
-              <th className="border-0">#</th>
-              <th className="border-0">Traffic Source</th>
-              <th className="border-0">Source Type</th>
-              <th className="border-0">Category</th>
-              <th className="border-0">Global Rank</th>
-              <th className="border-0">Traffic Share</th>
-              <th className="border-0">Change</th>
-            </tr>
-          </thead>
-          <tbody>
-            {pageTraffic.map(pt => <TableRow key={`page-traffic-${pt.id}`} {...pt} />)}
-          </tbody>
-        </Table>
-      </Card.Body>
-    </Card>
+    null
+    // <Card border="light" className="shadow-sm mb-4">
+    //   <Card.Body className="pb-0">
+    //     <Table responsive className="table-centered table-nowrap rounded mb-0">
+    //       <thead className="thead-light">
+    //         <tr>
+    //           <th className="border-0">#</th>
+    //           <th className="border-0">Traffic Source</th>
+    //           <th className="border-0">Source Type</th>
+    //           <th className="border-0">Category</th>
+    //           <th className="border-0">Global Rank</th>
+    //           <th className="border-0">Traffic Share</th>
+    //           <th className="border-0">Change</th>
+    //         </tr>
+    //       </thead>
+    //       <tbody>
+    //         {pageTraffic.map(pt => <TableRow key={`page-traffic-${pt.id}`} {...pt} />)}
+    //       </tbody>
+    //     </Table>
+    //   </Card.Body>
+    // </Card>
   );
 };
 
