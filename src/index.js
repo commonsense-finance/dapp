@@ -20,20 +20,29 @@ import { HashRouter } from "react-router-dom";
 import "./scss/main.scss";
 
 import "@fortawesome/fontawesome-free/css/all.css";
-import "react-datetime/css/react-datetime.css";
+// import "react-datetime/css/react-datetime.css";
 
-import Router from "./pages/Router";
+// import Router from "./pages/Router";
+import Navbar from "./components/Navbar";
+import Landing from "./pages/Landing";
 
-import { Web3Provider } from "./store/web3";
-import { ThemeProvider } from "./store/theme";
+// import { Web3Provider } from "./store/web3";
+// import { ThemeProvider } from "./store/theme";
+
+// ReactDOM.render(
+//   <ThemeProvider>
+//     {/* <Web3Provider> */}
+//       <HashRouter>
+//         <Router />
+//       </HashRouter>
+//     {/* </Web3Provider> */}
+//   </ThemeProvider>,
+//   document.getElementById("root")
+// );
 
 ReactDOM.render(
   <ThemeProvider>
-    {/* <Web3Provider> */}
-      <HashRouter>
-        <Router />
-      </HashRouter>
-    {/* </Web3Provider> */}
-  </ThemeProvider>,
-  document.getElementById("root")
+    <Navbar />
+    <Landing />
+  </ThemeProvider>
 );

@@ -10,6 +10,7 @@ export default () => {
       <a
         className="p-4 rounded-sm cursor-pointer"
         target="_blank"
+        rel="noreferrer"
         href="https://www.instagram.com/commonsense_finance/"
       >
         <svg
@@ -28,6 +29,7 @@ export default () => {
       <a
         className="p-4 rounded-sm cursor-pointer"
         target="_blank"
+        rel="noreferrer"
         href="https://twitter.com/Commonsense_fin"
       >
         <svg
@@ -45,6 +47,7 @@ export default () => {
       <a
         className="p-4 rounded-sm cursor-pointer"
         target="_blank"
+        rel="noreferrer"
         href="https://github.com/commonsense-finance"
       >
         <svg
