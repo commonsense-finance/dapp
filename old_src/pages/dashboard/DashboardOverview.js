@@ -3,7 +3,7 @@ import { useWeb3 } from "../../store/web3";
 import { getIndexData } from "../../store/indexes";
 import { Card, Table } from "@themesberg/react-bootstrap";
 
-const TableRow = ({ index, symbol, balance, icon }) => {
+const TableRow = ({ symbol, balance, icon }) => {
   return (
     <tr>
       <td>
@@ -18,7 +18,7 @@ const TableRow = ({ index, symbol, balance, icon }) => {
 export default () => {
   const [indexData, setIndexData] = useState([]);
   const [currentIndex, setCurrentIndex] = useState("TCST");
-  const account = "0x3198893DA148Cf45258121D990D1697aE0d77Fcc";
+  const account = "0x3198893da148cf45258121d990d1697ae0d77fcc";
   const web3 = useWeb3();
   async function handleIndex(indexName) {
     const data = await getIndexData({
@@ -28,7 +28,6 @@ export default () => {
     });
     setIndexData(data);
   }
-  console.log(indexData);
   useEffect(() => {
     handleIndex(currentIndex);
   }, []);

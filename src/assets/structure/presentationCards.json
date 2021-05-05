@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Index Funds",
+        "text": "We create cryptocurrency indexes and offer passive management funds that seek to replicate these indexes with the minimum possible tracking error.",
+        "icon": "faBookmark"
+    },
+    {
+        "title": "Low Cost",
+        "text": "We seek to optimize the investment costs in cryptocurrencies allowing our users to minimize management and avoid the transactional costs they incur when managing their portfolios.",
+        "icon": "faBookmark"
+    },
+    {
+        "title": "Passive Management",
+        "text": "We believe that investors benefit from low costs, and better returns in the long term, exposing themselves in a diversified way to the market through index funds.",
+        "icon": "faBookmark"
+    },
+    {
+        "title": "Long Term View (HODL)",
+        "text": "We offer products ideal for investors who follow a 'buy & hold' investment philosophy.",
+        "icon": "faBookmark"
+    },
+    {
+        "title": "Diversification",
+        "text": "Our index funds provides instant diversification, giving access to a portfolio with a 'bag' of assets in a single transaction.",
+        "icon": "faBookmark"
+    },
+    {
+        "title": "Risk Minimization",
+        "text": "By owning all the representative assets, you only run the risk of the market or sector, and not the risk of a single cryptocurrency.",
+        "icon": "faBookmark"
+    },
+    {
+        "title": "Objectivity",
+        "text": "Our indexes are built following a purely objective criterion for which there is no subjectivity or another type of personal assessment on the choice of assets.",
+        "icon": "faBookmark"
+    },
+    {
+        "title": "Automatic rebalancing",
+        "text": "Our index funds are rebalanced periodically to adjust the portfolio to the original criteria. This prevents any asset from taking a significant preponderance by misaligning the portfolio.",
+        "icon": "faBookmark"
+    }
+]

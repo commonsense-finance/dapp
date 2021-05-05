@@ -1,0 +1,74 @@
+[
+    {
+        "symbol": "BNB",
+        "contract": "SELF",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/bnb_28_2.png"
+    },
+    {
+        "symbol": "ETH",
+        "contract": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/ethereum_32.png"
+    },
+    {
+        "symbol": "BTCB",
+        "contract": "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/btcb_32.png"
+    },
+    {
+        "symbol": "XRP",
+        "contract": "0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/xrp_32.png"
+    },
+    {
+        "symbol": "ADA",
+        "contract": "0x3ee2200efb3400fabb9aacf31297cbdd1d435d47",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/cardano_32.png"
+    },
+    {
+        "symbol": "DOT",
+        "contract": "0x7083609fce4d1d8dc0c979aab8c869ea2c873402",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/polkadot_32.png"
+    },
+    {
+        "symbol": "LTC",
+        "contract": "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/litecoin_32.png"
+    },
+    {
+        "symbol": "DOGE",
+        "contract": "0xba2ae424d960c26247dd6c32edc70b295c744c43",
+        "decimals": 8,
+        "icon": "https://bscscan.com/token/images/dogecoin_32.png"
+    },
+    {
+        "symbol": "UNI",
+        "contract": "0xbf5140a22578168fd562dccf235e5d43a02ce9b1",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/uniswap_32.png"
+    },
+    {
+        "symbol": "BCH",
+        "contract": "0x8ff795a6f4d97e7887c79bea79aba5cc76444adf",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/bitcoincash_32.png"
+    },
+    {
+        "symbol": "LINK",
+        "contract": "0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/chainlink_32.png"
+    },
+    {
+        "symbol": "FIL",
+        "contract": "0x0d8ce2a99bb6e3b7db580ed848240e4a0f9ae153",
+        "decimals": 18,
+        "icon": "https://bscscan.com/token/images/filecoin_32.png"
+    }
+]

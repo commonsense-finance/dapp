@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext, createContext } from "react";
 import detectEthereumProvider from "@metamask/detect-provider";
 import Web3 from "web3";
-import Preloader from "../components/Preloader";
 
 const Web3Context = createContext();
 
@@ -10,7 +9,10 @@ export function useWeb3() {
 }
 
 async function initializeWeb3(setWeb3) {
+
   const ethereum = await detectEthereumProvider();
+  // ethereum.enable();
+  // console.log(ethereum)
   if (ethereum) {
     try {
       const web3 = new Web3(ethereum);
@@ -23,7 +25,7 @@ async function initializeWeb3(setWeb3) {
       window.location.reload();
     });
   } else {
-    alert("Please install MetaMask");
+    // alert("Please install MetaMask");
   }
 }
 
@@ -34,7 +36,8 @@ export function Web3Provider({ children }) {
   }, []);
   return (
     <Web3Context.Provider value={provider}>
-      {!provider ? <Preloader /> : children}
+      {children}
+      {/* {!provider ? <div>Loading</div> : children} */}
     </Web3Context.Provider>
   );
 }

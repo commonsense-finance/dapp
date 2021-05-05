@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./fonts.scss";
+
+html.dark {
+  background: #28293D;
+}
+
+html.light {
+  background: #f6f6f6;
+}
+
+*:focus {
+  outline: 0 !important;
+}

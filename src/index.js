@@ -17,22 +17,23 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
 
-import "./scss/volt.scss";
+import "./scss/main.scss";
 
 import "@fortawesome/fontawesome-free/css/all.css";
 import "react-datetime/css/react-datetime.css";
 
 import Router from "./pages/Router";
-import ScrollToTop from "./components/ScrollToTop";
 
 import { Web3Provider } from "./store/web3";
+import { ThemeProvider } from "./store/theme";
 
 ReactDOM.render(
-  <Web3Provider>
-    <HashRouter>
-      <ScrollToTop />
-      <Router />
-    </HashRouter>
-  </Web3Provider>,
+  <ThemeProvider>
+    <Web3Provider>
+      <HashRouter>
+        <Router />
+      </HashRouter>
+    </Web3Provider>
+  </ThemeProvider>,
   document.getElementById("root")
 );
