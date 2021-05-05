@@ -27,7 +27,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 
 // import { Web3Provider } from "./store/web3";
-// import { ThemeProvider } from "./store/theme";
+import { ThemeProvider } from "./store/theme";
 
 // ReactDOM.render(
 //   <ThemeProvider>
