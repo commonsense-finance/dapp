@@ -39,23 +39,26 @@ export default () => {
       <nav
         className={`flex justify-between w-full p-2 md:py-4 md:px-8 max-w-screen-3xl transparent`}
       >
-        <RouterLink className="flex items-center w-1/4" to="/">
+        {/* <RouterLink className="flex items-center w-1/4" to="/">
           <Logo />
-        </RouterLink>
+        </RouterLink> */}
+        <div className="flex items-center w-1/4">
+          <Logo />
+        </div>
         <ul className="flex items-center justify-end">
           {/* {location.pathname !== "/dashboard" && ( */}
-            <>
-              <li className="hidden md:block">
-                <Button variant="highlight" onClick={onClick}>
-                  JOIN THE PRIVATE BETA
-                </Button>
-              </li>
-              <li>
-                <Button to="/contact" variant="outline">
-                  CONTACT
-                </Button>
-              </li>
-            </>
+          <>
+            <li className="hidden md:block">
+              <Button variant="highlight" onClick={onClick}>
+                JOIN THE PRIVATE BETA
+              </Button>
+            </li>
+            <li>
+              <Button to="/contact" variant="outline">
+                CONTACT
+              </Button>
+            </li>
+          </>
           {/* )} */}
           <li>
             <Button
