@@ -1,8 +1,8 @@
 import React, { useCallback } from "react";
 import { useTheme } from "../store/theme";
 import Logo from "../components/Logo";
-import Link from "../components/Link";
-import { Link as RouterLink, useLocation } from "react-router-dom";
+// import Link from "../components/Link";
+// import { Link as RouterLink, useLocation } from "react-router-dom";
 import Button from "../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
@@ -51,9 +51,9 @@ export default () => {
                 </Button>
               </li>
               <li>
-                <Link to="/contact" variant="outline">
+                <Button to="/contact" variant="outline">
                   CONTACT
-                </Link>
+                </Button>
               </li>
             </>
           {/* )} */}
