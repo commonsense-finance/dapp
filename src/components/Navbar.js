@@ -11,7 +11,7 @@ import { useSpring, animated } from "react-spring";
 const typeformUrl = "https://ilzunxk6buh.typeform.com/to/vsX0wzkJ";
 
 export default () => {
-  const location = useLocation();
+  // const location = useLocation();
   const [{ mode }, setTheme] = useTheme();
   const toggleNightMode = useCallback(() => {
     const next = mode === "dark" ? "light" : "dark";
@@ -43,7 +43,7 @@ export default () => {
           <Logo />
         </RouterLink>
         <ul className="flex items-center justify-end">
-          {location.pathname !== "/dashboard" && (
+          {/* {location.pathname !== "/dashboard" && ( */}
             <>
               <li className="hidden md:block">
                 <Button variant="highlight" onClick={onClick}>
@@ -56,7 +56,7 @@ export default () => {
                 </Link>
               </li>
             </>
-          )}
+          {/* )} */}
           <li>
             <Button
               variant="outline"

@@ -29,11 +29,11 @@ import { ThemeProvider } from "./store/theme";
 
 ReactDOM.render(
   <ThemeProvider>
-    <Web3Provider>
+    {/* <Web3Provider> */}
       <HashRouter>
         <Router />
       </HashRouter>
-    </Web3Provider>
+    {/* </Web3Provider> */}
   </ThemeProvider>,
   document.getElementById("root")
 );
