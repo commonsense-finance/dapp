@@ -18,7 +18,7 @@ export default ({ title, children, icon }) => {
           {title}
         </h4>
       </div>
-      <div className="mt-4">{children}</div>
+      <div className="mt-4 font-secondary tracking-brand">{children}</div>
     </div>
   );
 };
