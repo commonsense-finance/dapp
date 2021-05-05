@@ -40,9 +40,13 @@ import { ThemeProvider } from "./store/theme";
 //   document.getElementById("root")
 // );
 
-ReactDOM.render(
-  <ThemeProvider>
-    <Navbar />
-    <Landing />
-  </ThemeProvider>
-);
+function Main() {
+  return (
+    <ThemeProvider>
+      <Navbar />
+      <Landing />
+    </ThemeProvider>
+  );
+}
+
+ReactDOM.render(<Main />, document.getElementById("root"));
