@@ -49,7 +49,9 @@ export default () => {
           </Appear>
           <Appear delay={0}>
             <div className="flex justify-center mt-24">
-              <Button onClick={onClick} variant="highlight">JOIN THE PRIVATE BETA</Button>
+              <Button onClick={onClick} variant="highlight">
+                JOIN THE PRIVATE BETA
+              </Button>
             </div>
           </Appear>
         </Section>
@@ -125,19 +127,23 @@ export default () => {
           </div>
           <Appear>
             <div className="flex justify-center mt-24" delay={300}>
-              <Button onClick={onClick} variant="outline">JOIN THE PRIVATE BETA</Button>
+              <Button onClick={onClick} variant="outline">
+                JOIN THE PRIVATE BETA
+              </Button>
             </div>
           </Appear>
         </Section>
         <Section className="grid w-full md:mb-24 md:grid-cols-2 md:gap-12">
           <Appear>
             <Card title="Our index founds">
-              {indexFunds.map((item) => (
+              {indexFunds.map((item, index, self) => (
                 <Fragment key={"funds" + item}>
                   <H2 className="p-1 text-center text-cadet dark:text-white tracking-brand font-secondary">
                     {item}
                   </H2>
-                  <hr className="text-cadet"></hr>
+                  {index < self.length - 1 && (
+                    <hr className="text-lightgray dark:text-cadet"></hr>
+                  )}
                 </Fragment>
               ))}
             </Card>
@@ -145,7 +151,7 @@ export default () => {
           <Appear delay={300}>
             <Card title="Roadmap">
               <div className="grid md:grid-cols-2">
-                {roadmap.map((item, index) => (
+                {roadmap.map((item, index, self) => (
                   <div
                     className={`${index % 2 ? "" : "font-bold"}`}
                     key={"roadmap" + item}
@@ -155,7 +161,9 @@ export default () => {
                         {item}
                       </H2>
                     </Fragment>
-                    <hr className="text-lightgray dark:text-cadet"></hr>
+                    {index < self.length - 2 && (
+                      <hr className="text-lightgray dark:text-cadet"></hr>
+                    )}
                   </div>
                 ))}
               </div>
@@ -163,7 +171,9 @@ export default () => {
           </Appear>
           <div className="flex justify-center col-span-2 md:mt-16">
             <Appear delay={300}>
-              <Button onClick={onClick} variant="highlight">JOIN THE PRIVATE BETA</Button>
+              <Button onClick={onClick} variant="highlight">
+                JOIN THE PRIVATE BETA
+              </Button>
             </Appear>
           </div>
         </Section>

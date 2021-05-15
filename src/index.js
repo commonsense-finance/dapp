@@ -24,7 +24,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 
 // import Router from "./pages/Router";
 import Navbar from "./components/Navbar";
-import Landing from "./pages/Landing";
+import DepositBox from "./components/DepositBox";
 
 // import { Web3Provider } from "./store/web3";
 import { ThemeProvider } from "./store/theme";
@@ -44,7 +44,7 @@ function Main() {
   return (
     <ThemeProvider>
       <Navbar />
-      <Landing />
+      <DepositBox />
     </ThemeProvider>
   );
 }
