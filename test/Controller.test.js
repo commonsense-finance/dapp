@@ -33,5 +33,34 @@ contract("Controller", (accounts) => {
       const indexs = await controller.getIndexs();
       assert.equal(indexs.length, 1);
     });
+    it("Should remove an index of the smart contract", async () => {
+      await controller.addIndex(
+        "0x0000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000002"
+      );
+      await controller.removeIndex("0");
+      const indexs = await controller.getIndexs();
+      assert.equal(indexs.length, 0);
+    });
+    it("Should update an index of the smart contract", async () => {
+      await controller.addIndex(
+        "0x0000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000002"
+      );
+      await controller.modifyIndex(
+        "0",
+        "0x0000000000000000000000000000000000000003",
+        "0x0000000000000000000000000000000000000004"
+      );
+      const indexs = await controller.index("0");
+      assert.equal(
+        indexs._wallet,
+        "0x0000000000000000000000000000000000000003"
+      );
+      assert.equal(
+        indexs._smartContract,
+        "0x0000000000000000000000000000000000000004"
+      );
+    });
   });
 });
